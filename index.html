@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sunshine">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kabagenyi Patience — Bright Thoughts Blog</title>
+  <meta name="description" content="The personal blog of Kabagenyi Patience, an Information Systems and Technology student: thoughts, learning and everyday stories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('kp-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" id="top" aria-label="Kabagenyi Patience, home">
+        <span class="brand-mark" aria-hidden="true">KP</span>
+        <span class="brand-text">Patience<span class="dot">.</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#about">About me</a>
+        <a href="#posts">Stories</a>
+        <a href="#hello">Say hi</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="theme-picker" role="group" aria-label="Choose a colour theme" id="themePicker"></div>
+        <button class="btn btn-session" id="sessionToggle" aria-expanded="false" aria-controls="sessionPanel">
+          <span aria-hidden="true">✦</span> My session
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <span class="blob blob-1" aria-hidden="true"></span>
+      <span class="blob blob-2" aria-hidden="true"></span>
+      <span class="blob blob-3" aria-hidden="true"></span>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="greeting" id="greeting">Welcome to my corner of the internet</p>
+          <h1>Hi, I'm <span class="name-highlight">Kabagenyi Patience</span></h1>
+          <p class="typed-line">I write about <span class="typed" id="typed" aria-live="off"></span><span class="caret" aria-hidden="true">|</span></p>
+          <p class="lead">This is where I think out loud — little stories, lessons I'm learning and ordinary days made interesting. Grab a seat, pick your favourite colours at the top, and stay a while.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#posts">Read my stories</a>
+            <a class="btn btn-outline" href="#about">Meet me</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <div class="avatar-ring">
+            <div class="avatar">KP</div>
+          </div>
+          <button class="sticker" id="sticker" type="button" tabindex="-1">Click me!</button>
+          <p class="hero-card-name">Kabagenyi Patience</p>
+          <p class="hero-card-role">IST Student · Writer · Learner</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>✦ Curious</span><span>✦ Kind</span><span>✦ Colourful</span><span>✦ Honest</span><span>✦ Growing</span><span>✦ Storyteller</span>
+        <span>✦ Curious</span><span>✦ Kind</span><span>✦ Colourful</span><span>✦ Honest</span><span>✦ Growing</span><span>✦ Storyteller</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="container section" id="about" aria-labelledby="aboutHeading">
+      <p class="eyebrow">Get to know me</p>
+      <h2 id="aboutHeading">About Kabagenyi Patience</h2>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hello! My name is <strong>Kabagenyi Patience</strong>, and this blog is my little home on the web. I started it because I have a lot of thoughts that deserve more than a notes app, and because I believe sharing honestly is one of the best ways to grow.</p>
+          <p>I'm currently pursuing a <strong>Bachelor of Information Systems and Technology</strong>, where I'm learning how technology, data and people come together to solve real problems. I love asking questions, building things and turning everyday moments into stories.</p>
+          <p>Here you'll find what I'm studying, what I'm figuring out, and sometimes what went delightfully wrong along the way, from late-night assignments to little lessons about tech and life.</p>
+          <p>My name means <em>patience</em>, and I'm still learning to live up to it — one good day at a time. If something I write makes you smile, think, or want to write back, then this blog is doing its job.</p>
+          <blockquote class="pull-quote">“Small steps, taken patiently, still get you somewhere wonderful.”</blockquote>
+        </div>
+
+        <div class="fact-grid">
+          <article class="fact fact-1"><span class="fact-icon" aria-hidden="true">💻</span><h3>IT in the making</h3><p>Studying Information Systems and Technology, one project at a time.</p></article>
+          <article class="fact fact-2"><span class="fact-icon" aria-hidden="true">✍️</span><h3>Writing out loud</h3><p>Putting thoughts into words helps me understand them.</p></article>
+          <article class="fact fact-3"><span class="fact-icon" aria-hidden="true">💬</span><h3>Love a good chat</h3><p>I enjoy ideas, stories and hearing yours.</p></article>
+          <article class="fact fact-4"><span class="fact-icon" aria-hidden="true">🎨</span><h3>Colour lover</h3><p>Why else would this site have five themes?</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS -->
+    <section class="container section" id="posts" aria-labelledby="postsHeading">
+      <p class="eyebrow">Fresh from my notebook</p>
+      <h2 id="postsHeading">My stories</h2>
+
+      <div class="filters" role="group" aria-label="Filter stories by topic" id="filters">
+        <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="thoughts" aria-pressed="false">Thoughts</button>
+        <button class="chip" data-filter="learning" aria-pressed="false">Learning</button>
+        <button class="chip" data-filter="everyday" aria-pressed="false">Everyday</button>
+      </div>
+
+      <div class="post-grid" id="postGrid">
+        <article class="post c1" data-category="thoughts" data-post-id="patience-lesson">
+          <p class="post-meta"><span class="tag">Thoughts</span> <time datetime="2026-10-20">20 Oct 2026</time> · 4 min</p>
+          <h3>What my name keeps teaching me</h3>
+          <p class="post-excerpt">Being named Patience comes with jokes, expectations and a few good lessons.</p>
+          <div class="post-body" hidden>
+            <p>People love to comment on my name. “You must be very patient!” Honestly? Some days I'm not. But having a name that's also a quiet instruction has made me pause more often than I otherwise would.</p>
+            <p>Patience, I've found, isn't waiting without feeling anything. It's staying kind to yourself while things take the time they take.</p>
+          </div>
+          <button class="btn btn-link read-toggle" aria-expanded="false">Read more →</button>
+        </article>
+
+        <article class="post c2" data-category="learning" data-post-id="learning-in-public">
+          <p class="post-meta"><span class="tag">Learning</span> <time datetime="2026-10-11">11 Oct 2026</time> · 5 min</p>
+          <h3>Learning in public is scary (and worth it)</h3>
+          <p class="post-excerpt">As an IT student, I decided to share the messy middle, not just the finished result.</p>
+          <div class="post-body" hidden>
+            <p>It's tempting to only show what's polished. But the most useful tutorials and notes I've read during my Information Systems and Technology studies were written by people brave enough to say “I didn't get this at first.”</p>
+            <p>So that's my promise here: honest notes, mistakes included. If I'm confused, you'll probably find out.</p>
+          </div>
+          <button class="btn btn-link read-toggle" aria-expanded="false">Read more →</button>
+        </article>
+
+        <article class="post c3" data-category="everyday" data-post-id="small-joys">
+          <p class="post-meta"><span class="tag">Everyday</span> <time datetime="2026-09-29">29 Sep 2026</time> · 3 min</p>
+          <h3>A list of very small joys</h3>
+          <p class="post-excerpt">Warm tea, a good song at the right moment, and other things that fix a Tuesday.</p>
+          <div class="post-body" hidden>
+            <p>Big goals get all the attention, but my days are really held together by small things: a message from a friend, sunlight on the floor, the first sip of something warm.</p>
+            <p>I've started writing three small joys down each evening. It turns out noticing them is a skill, and it gets stronger with practice.</p>
+          </div>
+          <button class="btn btn-link read-toggle" aria-expanded="false">Read more →</button>
+        </article>
+
+        <article class="post c4" data-category="thoughts" data-post-id="why-i-write">
+          <p class="post-meta"><span class="tag">Thoughts</span> <time datetime="2026-09-15">15 Sep 2026</time> · 4 min</p>
+          <h3>Why I finally started this blog</h3>
+          <p class="post-excerpt">I kept saying “one day.” Then I opened a blank file instead.</p>
+          <div class="post-body" hidden>
+            <p>For a long time, I told myself I'd start writing when I had more time, better ideas, or a nicer website. None of those showed up. So I made the site first and the excuses second.</p>
+            <p>Welcome to the result. It's colourful, a little imperfect, and completely mine.</p>
+          </div>
+          <button class="btn btn-link read-toggle" aria-expanded="false">Read more →</button>
+        </article>
+      </div>
+      <p class="empty-note" id="emptyNote" hidden>No stories here yet — check back soon!</p>
+    </section>
+
+    <!-- SAY HI -->
+    <section class="container section" id="hello" aria-labelledby="helloHeading">
+      <div class="hello-card">
+        <div>
+          <p class="eyebrow light">Let's connect</p>
+          <h2 id="helloHeading">Say hi to Patience</h2>
+          <p>Tell me your name and I'll remember it on this device, just for a friendlier welcome next time. Want to write to me directly? Email <a href="mailto:Kabagenyipatience41@gmail.com">Kabagenyipatience41@gmail.com</a>.</p>
+        </div>
+        <form class="hello-form" id="helloForm" autocomplete="off">
+          <label for="guestName">Your first name</label>
+          <div class="form-row">
+            <input id="guestName" name="guestName" type="text" maxlength="30" placeholder="e.g. Amina">
+            <button class="btn btn-primary" type="submit">Hello!</button>
+          </div>
+          <button class="btn btn-link light" type="button" id="forgetName" hidden>Forget my name</button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Kabagenyi Patience · Made with colour and care</p>
+      <p>Theme: <strong id="footerTheme">Sunshine</strong></p>
+    </div>
+  </footer>
+
+  <!-- Session panel -->
+  <aside class="session-panel" id="sessionPanel" aria-label="Session information" aria-hidden="true">
+    <div class="panel-head">
+      <h2>Your visit ✦</h2>
+      <button class="icon-btn" id="sessionClose" aria-label="Close session panel">✕</button>
+    </div>
+    <p class="panel-sub">Live details about this visit. It all stays in your browser — nothing is sent anywhere.</p>
+    <div id="sessionBody"></div>
+    <div class="panel-actions">
+      <button class="btn btn-small" id="copySession" type="button">Copy as JSON</button>
+      <button class="btn btn-small btn-danger" id="resetSession" type="button">Reset session</button>
+    </div>
+    <p class="panel-status" id="panelStatus" role="status" aria-live="polite"></p>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="burst-layer" id="burstLayer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
